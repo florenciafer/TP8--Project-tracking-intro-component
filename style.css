@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+body::after {
+    position:absolute;
+    width: 64vw;
+    height: 69vh;
+    content: " ";
+    background-color: hsl(207, 33%, 95%);
+    top: 0;
+    right: -58px;
+    z-index: -10;
+    border-bottom-left-radius: 3rem ;
+}
+
+header{
+    margin:2rem 0rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+nav{
+    display: none;
+}
+.nav_logo{
+    margin: 0 2em;
+}
+.hamburguer_nav{
+    margin: 0 1em;
+}
+.container-rigth img{
+ width:140%;
+}
+.title_section1{
+    margin-top: 8rem ;
+    margin-left: 0.3rem;
+}
+
+.title_new{
+    border-radius: 1em;
+    border: 1px solid black;
+    background-color:hsl(230, 29%, 20%);
+    color: white;
+    text-transform:uppercase;
+    font-weight: 700;
+    font-style: oblique;
+    margin: 1.1rem;
+    padding: 0.3em ; 
+}
+.subtitle_dash{
+    text-transform:uppercase;
+    color:hsl(231, 7%, 65%);
+    margin: 0.01rem;
+    letter-spacing:0.1em;
+}
+.info-container{
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 1.688rem;
+    color: hsl(230, 29%, 20%);
+
+}
+.info-container-p{
+  color:  hsl(231, 7%, 65%);
+  margin:0.25rem 6.5rem 0.75rem 1.125rem;
+  line-height: 1.625rem;
+}
+
+.action_btn{
+    margin:2.1em 0.1em;
+}
+.btn_demo{
+    color:white;
+    background-color: hsl(0, 100%, 68%);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family:'Barlow Condensed', sans-serif;
+    border-radius: 0.5em;
+    border: none;
+    height: 2rem;
+    margin: 0px 1.1rem;
+}
+.btn_demo:hover{
+    background-color :  hsl(235, 13%, 82%);  
+    color: hsl(0, 100%, 68%);
+} 
+.tag{
+    font-size: 0.9rem;;
+    text-transform:uppercase;
+    color:hsl(231, 7%, 65%);
+    margin: 0.01rem;
+    letter-spacing:0.1em;
+  
+}
+@MEDIA SCREEN AND (MIN-WIDTH:1024PX) {
+    nav{
+        display: flex;
+    }
+    .nav-list-desto {
+        width: 30rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    .nav-list-item {
+        font-size: 1rem;
+        text-decoration: none;
+        color: hsl(230, 29%, 20%);
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 0 0.5rem;
+    }
+
+    i {
+        font-size: 5px;
+        color: hsla(235, 7%, 65%, 0.445);
+    }
+
+    .nav-list-login {
+        text-decoration: none;
+        color: hsl(231, 7%, 65%);
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1rem;
+        
+    }
+   
+.hamburguer_nav{
+   display: none;
+}
+.nav_logo{
+    margin-left:4vh ;
+}
+body::after {
+    width: 37vw;
+    height: 205vh;
+    content: " ";
+    background-color:hsl(207, 33%, 95%);
+    position: absolute;
+    top: 0;
+    right: -54px;
+    z-index: -10;
+    border-bottom-left-radius: 70px ;
+} 
+ 
+
+    .container-left-rigth{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .container-left{
+        width: 50%;
+        padding: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .info-container{
+        font-size:41px;
+        line-height: 4rem;
+        
+    }
+    .info-container-p{
+        padding: 0 114px 0px 1.125rem;
+    }
+    .subtitle_dash {
+    font-size: 13px;
+    }
+    .action_btn{
+        margin: 2.1em 1.1em;
+    }
+}
